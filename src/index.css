@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000a1e;
+  --color-primary-container: #002147;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #ffffff;
+  
+  --color-secondary: #735c00;
+  --color-secondary-container: #fed65b;
+  --color-secondary-dim: #e9c349;
+  --color-on-secondary: #000a1e;
+  --color-on-secondary-container: #000a1e;
+  
+  --color-secondary-fixed: #fed65b;
+  --color-on-secondary-fixed: #000a1e;
+  
+  --color-background: #fcf9f8;
+  --color-surface-container: #eae7e7;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #dbd8d8;
+  --color-surface-container-low: #f5f2f1;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-card: #f6f3f2;
+  --color-on-background: #1c1b1b;
+  --color-on-surface-variant: #44474e;
+  --color-text-muted: #44474e;
+  
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-fade-in: fade-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-scale-up: scale-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-up {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes spin-custom {
+  to { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  animation: spin-custom 1s linear infinite;
+}
+
+/* Custom scrollbar and premium utility rules */
+::selection {
+  background-color: #fed65b;
+  color: #000a1e;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-sans);
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
