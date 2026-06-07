@@ -615,7 +615,7 @@ export default function App() {
                       <img
                         alt="Robotics Lab"
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="/src/assets/images/classroom_students_1780864410690.png"
+                        src="https://honeylandschools.ng/wp-content/uploads/2020/03/DSC_7313-scaled.jpg"
                         referrerPolicy="no-referrer"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent flex flex-col justify-end p-6 z-10">
@@ -724,7 +724,7 @@ export default function App() {
                       <img
                         alt="Student Portrait"
                         className="w-full h-full object-cover hover:scale-101 transition-transform duration-500"
-                        src="/src/assets/images/student_portrait_1780865298051.png"
+                        src="https://i.ytimg.com/vi/aQTXaixF5hg/maxresdefault.jpg"
                         referrerPolicy="no-referrer"
                       />
                     </div>
